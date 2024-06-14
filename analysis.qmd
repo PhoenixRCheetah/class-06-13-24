@@ -1,0 +1,18 @@
+---
+title: "Mass Census Tracts"
+author: "Roshan Ranganathan"
+format: html
+execute:
+  echo: false
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+```
+
+```{r}
+read_csv("mass-tracts.csv") |> 
+  ggplot(aes(x = med_income))
+```
+
